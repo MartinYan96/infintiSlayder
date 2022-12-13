@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+  background-color: rgb(70, 104, 124);
+}
+body .slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1185px;
+  height: 300px;
+}
+body .slider .wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 1185px;
+  height: 300px;
+  z-index: 1;
+}
+body .slider .wrapper .slides {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -400px;
+  width: 10000px;
+}
+body .slider .wrapper .slides .slide {
+  width: 400px;
+  height: 300px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s;
+  position: relative;
+  border-radius: 2px;
+}
+body .slider .wrapper .slides .slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+  width: 385px;
+}
+body .slider .wrapper .slides.shifting {
+  transition: left 0.2s ease-out;
+}
+body .slider button {
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  z-index: 2;
+  cursor: pointer;
+}
+body .slider .prev {
+  left: -50px;
+}
+body .slider .next {
+  right: -50px;
+}/*# sourceMappingURL=style.css.map */
