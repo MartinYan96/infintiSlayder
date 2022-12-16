@@ -139,5 +139,6 @@ slider.addEventListener('touchstart', () => {
 slider.addEventListener('touchmove', () => {
     clearInterval(sliderInterval)
 })
-slider.addEventListener('touchend', sliderAutoNext)
+
+slider.addEventListener('touchcancel', sliderAutoNext)
 slider.addEventListener('mouseleave', sliderAutoNext)
