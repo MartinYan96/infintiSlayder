@@ -22,8 +22,8 @@ let posX1 = 0,
     cloneSlide2 = slide2.cloneNode(true),
     cloneLastSlide = lastSlide.cloneNode(true),
     index = 0,
-    allowShift = true;
-interval = 2000
+    interval = 2000
+let allowShift = true;
 
 // Clone first and last slide
 sliderTrack.appendChild(cloneFirst);
@@ -134,6 +134,9 @@ slider.addEventListener('mousemove', () => {
     clearInterval(sliderInterval)
 })
 slider.addEventListener('touchstart', () => {
+    clearInterval(sliderInterval)
+})
+slider.addEventListener('touchmove', () => {
     clearInterval(sliderInterval)
 })
 slider.addEventListener('touchend', sliderAutoNext)
