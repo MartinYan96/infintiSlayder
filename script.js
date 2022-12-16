@@ -82,11 +82,10 @@ function dragEnd(e) {
     } else {
         sliderTrack.style.left = (posInitial) + "px";
     }
-
+    
     document.onmouseup = null;
     document.onmousemove = null;
 }
-
 function shiftSlide(dir, action) {
     sliderTrack.classList.add('shifting');
 
