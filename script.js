@@ -82,7 +82,7 @@ function dragEnd(e) {
     } else {
         sliderTrack.style.left = (posInitial) + "px";
     }
-    
+
     document.onmouseup = null;
     document.onmousemove = null;
 }

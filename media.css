@@ -33,7 +33,7 @@
     height: 250px;
   }
   body .slider .next,
-body .slider .prev {
+  body .slider .prev {
     top: 36%;
     height: 35px;
     width: 35px;
